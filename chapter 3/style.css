@@ -1,7 +1,28 @@
-h1 {
-    color: green;
-}
+/* universal selector */
+/* 全域選擇器 */
+
+/* * {
+    color: green
+} */
+
+/* element selector */
 
 p {
-    color: darkblue;
+    color:rgb(167, 233, 167);
+}
+
+/* id selector */
+
+#redText {
+    color:red
+}
+
+/* class selector */
+
+.blueText {
+    color:blue;
+}
+
+.largeText {
+    font-size: 3rem;
 }
