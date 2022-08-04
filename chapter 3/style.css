@@ -1,28 +1,85 @@
-/* universal selector */
-/* 全域選擇器 */
+*::selection {
+    background-color: greenyellow
+}
 
-/* * {
-    color: green
+h1,
+h2 {
+    color: orange;
+}
+
+/* descendant 後裔 selector */
+
+div.link1 a {
+    color: red;
+}
+
+div.link2 a {
+    color: yellow;
+}
+
+/* attribute selector 
+依照某個欄位的type做設定*/
+
+input[type="text"] {
+    color: green;
+}
+
+/* 
+Pseudo Classes 
+hover 滑到變更屬性
+active 按住變更屬性
+focus 選擇到變更屬性 直到點擊到其他標籤
+nth-child(x) 變更欄位從0開始 變更第nx的欄位屬性
+*/
+
+textarea:hover {
+    background-color: red;
+}
+
+/* 
+Pseudo elements 
+before 之前
+after 之後
+first-letter 字首
+
+*/
+p::first-letter {
+    font-size:2.5rem;
+}
+
+/* p::before {
+    content: ">>";
+    color: red;
 } */
 
-/* element selector */
-
-p {
-    color:rgb(167, 233, 167);
+h1::after {
+    content: "↓";
+    color:red;
 }
 
-/* id selector */
+/* 
+text-align: 
+center 表示置中
+left 靠左(預設)
+right 靠右
 
-#redText {
-    color:red
+text-decoration:
+line-through 刪除線
+underline 底線
+
+font-family 字體
+font-weight 粗度(預設400)
+text-indent 留白
+*/
+
+h1 {
+    background-color: crimson;
+    color: white;
 }
 
-/* class selector */
-
-.blueText {
-    color:blue;
-}
-
-.largeText {
-    font-size: 3rem;
+body {
+    background-image:url("./panda.jpg");
+    color: darkorange;
+    background-size: cover;
+    background-position: center;
 }
